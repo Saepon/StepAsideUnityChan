@@ -11,13 +11,13 @@ public class DeletingController : MonoBehaviour
     {
         this.MainCamera = GameObject.Find("Main Camera");
         
-        this.difference = this.transform.position.z -MainCamera.transform.position.z ;
 
     }
      
     // Update is called once per frame
     void Update()
-    {
+    {        this.difference = this.transform.position.z -MainCamera.transform.position.z ;
+
    if (this. difference < -1)
         {
          GameObject.Destroy(this.gameObject);
